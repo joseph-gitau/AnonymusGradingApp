@@ -3,8 +3,10 @@ package com.example.anonymousgradingapp;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.DatePickerDialog;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.DatePicker;
 import android.widget.EditText;
 
@@ -12,6 +14,7 @@ import java.util.Calendar;
 
 public class AddExamActivity extends AppCompatActivity {
     private EditText examDateEditText;
+    private Button scanExamButton, addCourseButton, viewBarcodeButton, uploadRosterButton, viewCoursesButton, addExamButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,6 +39,43 @@ public class AddExamActivity extends AppCompatActivity {
                             }
                         }, year, month, day);
                 datePickerDialog.show();
+            }
+        });
+
+        scanExamButton = findViewById(R.id.scanExamButton);
+        scanExamButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                // TODO: Open barcode scanner to scan exam
+                Intent intent = new Intent(AddExamActivity.this, ScanExamActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        addCourseButton = findViewById(R.id.addCourseButton);
+        addCourseButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(AddExamActivity.this, AddCourseActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        viewBarcodeButton = findViewById(R.id.viewBarcodeButton);
+        viewBarcodeButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(AddExamActivity.this, BarcodeActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        uploadRosterButton = findViewById(R.id.uploadRosterButton);
+        uploadRosterButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(AddExamActivity.this, AddCourseActivity.class);
+                startActivity(intent);
             }
         });
     }

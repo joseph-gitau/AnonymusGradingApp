@@ -19,6 +19,7 @@
     <string name="already_have_an_account">Already have an account? Login</string>
     <string name="dont_have_an_account">Don\'t have an account? Register</string>
     <string name="logout">Logout</string>
+    <string name="View_Barcode_names">View Barcode-Name Map</string>
 
     <string-array name="class_names">
         <item>Class 1</item>
