@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">Anonymous Grading App</string>
+    <string name="login">Login</string>
+    <string name="login_title">Login to your account - AGA</string>
+    <string name="register">Register</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="registration_title">Registration - AGA</string>
+    <string name="name">Name</string>
+    <string name="submit">Submit</string>
+    <string name="add_course">Add Course</string>
+    <string name="add_course_title">Add Course - AGA</string>
+    <string name="course_name">Course Name</string>
+    <string name="instructor_name">Instructor Name</string>
+    <string name="upload_roster">Upload Class Roster</string>
+    <string name="add_exam">Add Exam - AGA</string>
+    <string name="scan_exam">Scan Exam</string>
+    <string name="upload_class_roster">Upload Class Roster</string>
+    <string name="already_have_an_account">Already have an account? Login</string>
+    <string name="dont_have_an_account">Don\'t have an account? Register</string>
+    <string name="logout">Logout</string>
+
+    <string-array name="class_names">
+        <item>Class 1</item>
+        <item>Class 2</item>
+        <item>Class 3</item>
+    </string-array>
+    <string name="title_activity_navigation">navigationActivity</string>
+
+</resources>
